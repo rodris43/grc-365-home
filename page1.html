@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fixed-Width Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 1024px;
+        height: 1525px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #textbox {
+        width: 768px;
+        height: 768px;
+        margin: 48px auto;
+        border: 1px dashed gray;
+    } #banner {
+        width: 1024px;
+    } h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: brown;
+        text-shadow: 2px 3px 6px darkgray;
+    } p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        margin: 24px auto;
+        padding-bottom: 175px;
+    } img.float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        font: 14pt/2.0em Georgia;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169,225,245,0.80);
+    } a li {
+        color: black;
+    } a {
+        text-decoration: none;
+    } li:hover, a li:hover {
+        background: rgba(169,225,245,0.50);
+	} video, iframe {
+		width: 640px;
+		height: 360px;
+		display: block;
+		margin: 36px auto;
+		border: 1px solid black;
+		box shadow: 2px 3px 6px gray;
+		
+	}
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="record collecting banner 2.jpg" width: />
+		
+        <ul>
+            <li>Home</li>
+            <a href="page2.html"></a><li>Types of Vinyl Records</li>
+        </ul>
+        <h1>Vinyl Record Collecting</h1>
+        <p><img class="float-left" src="vinyl record collecting.jpg" />
+            Record collecting is a hobby that allows people to connect with music in a more physical and personal way. Collectors often search for albums from their favorite artists, rare releases, unique pressings, and records with interesting cover art. Part of the fun comes from digging through record stores, thrift shops, flea markets, and online marketplaces to find something unexpected. Unlike streaming, owning a physical record gives listeners something they can hold, display, and take care of. For many collectors, records are more than just a way to listen to music; they are pieces of history that represent different artists, eras, and personal memories.</p>
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/kQtv6ZJw71M?si=BcoDRZh4bNcupV9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<!--
+		<video controls width= "640" height= "360" ></video>
+			<source src="../vinyl video/Vinyl Record Collecting Video Final/Vinyl Record Collecting Video Final.mp4"
+			poster= "Vinyl Record Collecting Video Final-Cover.jpg"/>
+		</video> -->
+   </div>
+</body>
+</html>
