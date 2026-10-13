@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+    }
+
+    h1 {
+        font: 48pt/1.4em Satisfy, cursive;
+        text-align: center;
+        text-shadow: 1px 2px 3px rgba(0,176,173,1.00);
+        margin: 24px 0;
+    }
+
+    h2 {
+        font: bold 18pt/1.4em Candara, serif;
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    p {
+        font: 14pt/1.4em Candara, serif;
+        width: 768px;
+        max-width: 90%;
+        margin: 24px auto;
+    }
+
+    #textbox {
+        width: 1024px;
+        max-width: 95%;
+        min-height: 512px;
+        height: auto;
+        margin: 0 auto;
+        padding: 12px;
+        background: whitesmoke;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    figure {
+        width: 202px;
+        margin: 24px;
+    }
+
+    img, .zoom {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s, background-size 0.5s;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    figcaption {
+        font: 12pt/1.4em Candara, serif;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .zoom {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .zoom-type {
+        background-image: url("compare and contrast type2.jpg");
+    }
+
+    .zoom-poster {
+        background-image: url("silent orbit poster.jpg");
+    }
+
+    img:hover {
+        transform: scale(1.03);
+    }
+
+    .zoom:hover {
+        background-size: 105%;
+    }
+
+    .home-button {
+        display: block;
+        width: 175px;
+        height: 50px;
+        line-height: 50px;
+        background: lightgray;
+        border-radius: 12px;
+        font: 14pt/50px Candara, serif;
+        text-align: center;
+        margin: 24px auto;
+        color: black;
+        text-decoration: none;
+        transition: background 0.5s;
+    }
+
+    .home-button:hover {
+        background: rgba(169,225,245,0.80);
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .icon {
+        width: 96px;
+        height: 96px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+    }
+
+    .icon:hover {
+        transform: none;
+        background: green;
+        transition: background 0.5s;
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 36pt;
+        }
+
+        #textbox {
+            width: 95%;
+        }
+
+        figure {
+            margin: 20px 10px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <h1>Portfolio</h1>
+
+    <a href="index.html" class="home-button">Home</a>
+
+    <div id="textbox">
+
+        <!-- Album Cover -->
+        <figure>
+            <a href="lovely ladies cover.jpg" target="_blank">
+                <img
+                    src="lovely ladies cover.jpg"
+                    alt="Lovely Ladies album cover">
+            </a>
+            <figcaption>
+                Punk Rock Album Cover
+            </figcaption>
+        </figure>
+
+        <!-- Typography Example -->
+        <figure>
+            <a href="Compare and contrast type2.jpg" target="_blank">
+                <div class="zoom zoom-type"
+                     role="img"
+                     aria-label=""Typography example""></div>
+            </a>
+            <figcaption>
+
+                Typography Example
+            </figcaption>
+        </figure>
+
+        <!-- Movie Poster -->
+        <figure>
+            <a href="silent orbit poster.jpg" target="_blank">
+                <div class="zoom zoom-poster"
+                     role="img"
+                     aria-label="Silent Orbit movie poster"></div>
+            </a>
+            <figcaption>
+                Sci-Fi Movie Poster
+            </figcaption>
+        </figure>
+
+    </div>
+
+    <h2>Colophon</h2>
+
+    <p>
+        This portfolio page design uses 200 × 200 pixel thumbnails
+        linked to larger versions so readers can click and see the
+        artwork in greater detail. The gray box uses display: flex,
+        justify-content: center, and align-items: flex-start.
+        The flex-wrap property allows additional thumbnails to
+        automatically move to a new row when needed.
+    </p>
+
+    <p style="margin-bottom: 24px;">
+        The thumbnails include hover effects. The album cover
+        slightly enlarges when hovered over, while the typography
+        example and movie poster use a background image zoom effect.
+        Additional effects can be created with CSS filters, including
+        blur, opacity, saturation, and other adjustments.
+    </p>
+
+    <p style="text-align: center; font-style: italic; margin: 0 auto 48px auto;">
+        Selected works from my design portfolio.
+    </p>
+
+</body>
+</html>
