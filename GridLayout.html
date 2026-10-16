@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hot Air Ballooning</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: whitesmoke;
+    }
+
+    #page {
+        width: 928px;
+        height: auto;
+        background: white;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px gray;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 768px;
+        height: 500px;
+        margin: 36px auto;
+        display: grid;
+        grid-gap: 0;
+        grid-template: 250px 250px / 300px 468px;
+    }
+
+    header img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin-top: 24px;
+        text-shadow: 2px 3px 6px goldenrod;
+    }
+
+    main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    main img:nth-child(1) {
+        grid-area: 1 / 1;
+    }
+
+    main img:nth-child(2) {
+        grid-area: 2 / 1;
+    }
+
+    main img:nth-child(3) {
+        display: none;
+    }
+
+    main img:nth-child(4) {
+        grid-area: 1 / 2 / 3 / 3;
+        height: 100%;
+    }
+
+    main p {
+        font: 14pt/1.4em Georgia, serif;
+        margin-bottom: 12px;
+    }
+
+    li {
+        width: 20%;
+        height: 35px;
+        border-radius: 6px;
+        list-style: none;
+        text-align: center;
+        font: 14pt/1.8em Roboto, sans-serif;
+        background: rgba(125,147,151,0.50);
+        margin: 0 auto;
+        display: block;
+    }
+
+    a li {
+        color: black;
+        text-decoration: none;
+    }
+
+    a li:hover {
+        background: lightgray;
+    }
+
+    li:last-child {
+        border-left: 1px solid white;
+    }
+
+    ul li ul li {
+        visibility: hidden;
+        width: 100%;
+        float: none;
+    }
+
+    ul li:hover li {
+        visibility: visible;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    footer {
+        width: 80%;
+        height: auto;
+        min-height: 100px;
+        margin: 0 auto 48px auto;
+    }
+
+    footer p {
+        font: 14pt/1.4em Georgia, serif;
+    }
+
+    footer h2 {
+        font: bold 14pt/1.4em Georgia, serif;
+        text-align: center;
+    }
+</style>
+}
+</head>
+
+<body>
+    <div id="page">
+
+        <header>
+            <img src="aalmeidah-trees-4741364_1920.png"printeboek-winter-landscape-2571788_1920.jpg"" alt="Snow">
+
+            <a href="index.html"><li>Home</li></a>
+
+            <h1>Winter Landscapes</h1>
+        </header>
+
+        <main>
+            <img src="yoshitaka2-sunset-7704594_1920.jpg" alt="Snow Mountain">
+            <img src="apnear40-winter-7701553_1920.jpg" alt="Snow Field">
+            <img src="3-multiballoonH.jpg" alt="Multiple hot air balloons">
+            <img src="stills_by_suki-winter-8460950_1920.jpg" alt="Winter Forest">
+        </main>
+
+        <footer>
+            <h2>Colophon</h2>
+          <p>
+                The images in this gallery were arranged using a grid layout
+                with two rows and two columns. The image in the second column
+                spans both rows. Images courtesy of
+                <a href="https://www.pixabay.com" target="_blank">pixabay.com</a>.
+            </p>
+        </footer>
+
+</div>
+</body>
+</html>
+
