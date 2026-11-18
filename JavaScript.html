@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vinyl Record Collecting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: whitesmoke;
+    }
+
+    #page {
+        width: 1024px;
+        min-height: 1525px;
+        max-width: 100%;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    }
+
+    #banner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: brown;
+        text-shadow: 2px 3px 6px darkgray;
+    }
+
+    p {
+        font: 14pt/1.4em Georgia;
+        width: 768px;
+        max-width: 90%;
+        margin: 24px auto;
+        padding-bottom: 175px;
+    }
+
+    img.float-left {
+        width: 300px;
+        max-width: 100%;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    }
+
+    ul {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    li {
+        font: 14pt/2.0em Georgia;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: rgba(169,225,245,0.80);
+    }
+
+    a li {
+        color: black;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li:hover {
+        background: rgba(169,225,245,0.50);
+    }
+
+    /* JavaScript button styling */
+
+    .text-controls {
+        text-align: center;
+        margin: 25px auto;
+        padding: 10px;
+    }
+
+    .text-controls button {
+        background: rgba(169,225,245,0.80);
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin: 5px;
+        font: 12pt Arial;
+        cursor: pointer;
+    }
+
+    .text-controls button:hover {
+        background: rgba(169,225,245,0.50);
+    }
+
+    iframe {
+        width: 640px;
+        max-width: 90%;
+        height: 360px;
+        display: block;
+        margin: 36px auto;
+        border: 1px solid black;
+        box-shadow: 2px 3px 6px gray;
+    }
+
+    /* Responsive design */
+
+    @media screen and (max-width: 600px) {
+
+        h1 {
+            font-size: 34pt;
+        }
+
+        p {
+            width: 90%;
+            font-size: 12pt;
+        }
+
+        img.float-left {
+            width: 45%;
+        }
+
+        .text-controls button {
+            font-size: 10pt;
+            padding: 8px;
+        }
+
+        iframe {
+            height: 220px;
+        }
+
+    }
+
+</style>
+</head>
+
+<body>
+
+<div id="page">
+
+    <img id="banner" src="record collecting banner 2.jpg" alt="Vinyl record collecting banner">
+
+    <ul>
+        <li>Home</li>
+        <a href="page2.html"><li>Types of Vinyl Records</li></a>
+    </ul>
+
+    <h1>Vinyl Record Collecting</h1>
+
+    <!-- JavaScript buttons -->
+
+    <div class="text-controls">
+
+        <button onclick="changeTextSize(2)">
+            Increase Text +
+        </button>
+
+        <button onclick="changeTextSize(-2)">
+            Decrease Text -
+        </button>
+
+        <button onclick="resetTextSize()">
+            Reset Text
+        </button>
+
+        <button onclick="window.print()">
+            Print Page
+        </button>
+
+    </div>
+
+    <!-- Main paragraph -->
+
+    <p id="vinylText">
+
+        <img class="float-left" src="vinyl record collecting.jpg" alt="Vinyl record collection">
+
+        Record collecting is a hobby that allows people to connect with music in a more physical and personal way. Collectors often search for albums from their favorite artists, rare releases, unique pressings, and records with interesting cover art. Part of the fun comes from digging through record stores, thrift shops, flea markets, and online marketplaces to find something unexpected. Unlike streaming, owning a physical record gives listeners something they can hold, display, and take care of.
+
+        For many collectors, records are more than just a way to listen to music; they are pieces of history that represent different artists, eras, and personal memories.
+
+    </p>
+
+    <!-- YouTube video -->
+
+    <iframe
+        src="https://www.youtube.com/embed/kQtv6ZJw71M"
+        title="Vinyl Record Collecting Video"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+<!-- JavaScript functions -->
+
+<script>
+
+    var originalSize = 14;
+    var currentSize = originalSize;
+
+    function changeTextSize(amount) {
+
+        currentSize = currentSize + amount;
+
+        if (currentSize > 24) {
+            currentSize = 24;
+        }
+
+        if (currentSize < 10) {
+            currentSize = 10;
+        }
+
+        document.getElementById("vinylText").style.fontSize =
+        currentSize + "pt";
+
+    }
+
+    function resetTextSize() {
+
+        currentSize = originalSize;
+
+        document.getElementById("vinylText").style.fontSize =
+        originalSize + "pt";
+
+    }
+
+</script>
+
+</body>
+</html>
